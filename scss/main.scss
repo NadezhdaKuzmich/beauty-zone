@@ -1,2 +1,13 @@
 @import "./utils/fonts";
+@import "./utils/variables";
 @import "./global";
+@import "./utils/texts.scss";
+@import "./layouts/section";
+@import "./utils/utils";
+
+@import "./components/buttons";
+@import "./components/links";
+
+@import "./layouts/about-section";
+@import "./layouts/header";
+@import "./layouts/hero-section";

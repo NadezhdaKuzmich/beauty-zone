@@ -1,0 +1,89 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 999;
+
+  @media screen and (min-width: $bp-desktop) {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    padding: 32px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__logo {
+    max-width: 72px;
+    max-height: 38px;
+    fill: var(--color-primary-brand);
+
+    @media screen and (min-width: $bp-middle) {
+      max-width: 114px;
+      max-height: 56px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-middle) {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+      gap: 56px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: center;
+    }
+  }
+
+  &__social-icons {
+    display: none;
+
+    @media screen and (min-width: $bp-middle) {
+      display: flex;
+      align-items: center;
+      fill: var(--color-primary-dark);
+      gap: 32px;
+    }
+  }
+
+  &__social-icon {
+    &:hover {
+      fill: var(--color-primary-brand);
+    }
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-light);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--color-primary-brand);
+    }
+
+    @media screen and (min-width: $bp-middle) {
+      display: none;
+    }
+  }
+}

@@ -14,7 +14,7 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="#">
+            <a class="header__logo" href="#">
               <svg class="logo-light" width="74" height="42">
                 <use href="./images/icons.svg#icon-logo"></use>
               </svg>
@@ -33,55 +33,75 @@
                 <a class="link" href="#contact-section">Контакти</a>
               </li>
             </ul>
-            <ul class="header__social-icons">
-              <li class="header__social-item">
-                <a href="#">
-                  <svg class="header__social-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="header__social-item">
-                <a href="#">
-                  <svg class="header__social-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="header__social-item">
-                <a href="#">
-                  <svg class="header__social-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </nav>
+          <ul class="header__social-icons">
+            <li class="header__social-item">
+              <a href="#">
+                <svg class="header__social-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a href="#">
+                <svg class="header__social-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a href="#">
+                <svg class="header__social-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-section__title">
-            <span class="text-small">Косметологічна клініка</span>
-            <span class="text-brand uppercase">beauty zone</span>
-          </h1>
-          <button
-            class="hero-section__button button modal-btn-open"
-            type="button">
-            Замовити дзвінок
-          </button>
-          <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+          <div class="hero-section__container">
+            <h1 class="hero-section__title">
+              <span class="text-small">Косметологічна клініка</span>
+              <span class="text-brand text-capitalize">beauty zone</span>
+            </h1>
+            <button
+              class="hero-section__button button modal-btn-open"
+              type="button">
+              Замовити дзвінок
+            </button>
+            <div class="hero-section__description">
+              <p>
+                Запишись та отримай безкоштовну консультацію нашого косметолога
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="about-section section" id="about-section">
+        <svg
+          class="about-section__wave"
+          x="10px"
+          y="10px"
+          viewBox="0 0 1440 126"
+          style="enable-background: new 0 0 1440 126">
+          <path
+            d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z" />
+        </svg>
         <div class="container">
           <div class="about-section__container">
             <div class="about-section__content">
               <h2 class="about-section__title section__title">
                 Перевтілюйтесь в
-                <span class="text-brand uppercase">beauty zone!</span>
+                <span class="text-brand text-capitalize">beauty zone!</span>
               </h2>
               <div class="about-section__description">
                 <p>
@@ -89,8 +109,9 @@
                   догляду за шкірою обличчя та тіла.
                 </p>
                 <p>
-                  B <span class="text-bold">beauty zone</span> ми гарантуємо
-                  найвищі стандарти якості та приємний сервіс. Наші
+                  B
+                  <span class="text-bold text-capitalize">beauty zone</span> ми
+                  гарантуємо найвищі стандарти якості та приємний сервіс. Наші
                   косметологічні процедури та препарати допоможуть вам
                   підтримувати свою красу та молодість. З нами краса назавжди!
                 </p>
@@ -231,7 +252,8 @@
       </section>
       <section class="section contact-section" id="contact-section">
         <div class="container">
-          <h2 class="contact-section__title section__title">
+          <h2
+            class="contact-section__title section__title section__title--centered">
             Як нас <span class="text-brand">знайти</span>
           </h2>
           <div class="contact-section__container">
@@ -246,7 +268,7 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="contact-section__form">
               <h3>
-                Запишіться <span class="texxt-brand">безкоштовно</span> та
+                Запишіться <span class="text-brand">безкоштовно</span> та
                 отримайте подарунок
               </h3>
               <form name="contact-form" autocomplete="on">

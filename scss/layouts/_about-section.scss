@@ -1,0 +1,18 @@
+.about-section {
+  position: relative;
+
+  &__wave {
+    position: absolute;
+    top: -40px;
+    fill: var(--color-primary-light);
+    stroke: var(--color-primary-light);
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -70px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      top: -90px;
+    }
+  }
+}

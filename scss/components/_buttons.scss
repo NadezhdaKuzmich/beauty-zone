@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary-light);
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-brand);
+  background: var(--color-primary-brand);
+  padding: 10px 24px;
+  cursor: pointer;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 16px 32px;
+  }
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background: transparent;
+}
