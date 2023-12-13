@@ -1,0 +1,68 @@
+.advantages-section {
+  position: relative;
+  padding-top: 52px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 68px;
+  }
+
+  @media screen and (min-width: $bp-middle) {
+    padding-top: 86px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: -14rem;
+    right: 0;
+    width: auto;
+    height: 973px;
+    background-image: url(../../images/background-advantages-section.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -98px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      height: 1785px;
+      background-position: center;
+      top: -130px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-middle) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 16px 56px;
+  }
+
+  &__item {
+    display: flex;
+    height: 181px;
+    min-width: 316px;
+    max-width: calc((100% - 112px) / 3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background: var(--color-primary-light);
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+    fill: var(--color-primary-brand);
+    padding: 24px 32px;
+    gap: 12px;
+  }
+}
