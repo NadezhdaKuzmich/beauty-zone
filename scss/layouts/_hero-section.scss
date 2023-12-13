@@ -7,7 +7,7 @@
       rgba(255, 255, 255, 0.19) 58.65%,
       rgba(255, 255, 255, 0) 72.78%
     ),
-    url("../../images/hero-section-background.jpg");
+    url("../images/hero-section-background.jpg");
   background-position: right top;
   background-repeat: repeat-x;
   background-size: cover;
@@ -23,7 +23,7 @@
         rgba(255, 255, 255, 0.19) 58.65%,
         rgba(255, 255, 255, 0) 72.78%
       ),
-      url("../../images/hero-section-background@2x.jpg");
+      url("../images/hero-section-background@2x.jpg");
   }
 
   @media screen and (min-width: $bp-large) {
