@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 *,
 ::after,
 ::before {
@@ -48,51 +52,4 @@ address {
 
 a {
   display: inline-block;
-}
-
-// slider
-
-.procedurs-section {
-  &__title {
-    margin-bottom: 24px;
-  }
-
-  &__slider {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-
-  &__container {
-    overflow: hidden;
-  }
-
-  &__list {
-    margin-bottom: 32px;
-  }
-}
-
-.procedur-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 444px;
-  border-radius: 16px;
-  padding: 24px;
-  overflow: hidden;
-
-  &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  &__title {
-    font-size: 24px;
-    font-weight: 600;
-  }
 }

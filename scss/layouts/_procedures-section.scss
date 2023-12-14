@@ -1,0 +1,31 @@
+.procedures-section {
+  &__title {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-middle) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}
