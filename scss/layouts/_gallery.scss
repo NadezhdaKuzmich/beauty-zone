@@ -5,7 +5,7 @@
   @media screen and (min-width: $bp-tablet) {
     display: flex;
     width: 80%;
-    height: 698px;
+    height: 610px;
     flex-direction: column;
     flex-shrink: 0;
     margin: auto;
@@ -14,6 +14,7 @@
 
   @media screen and (min-width: $bp-middle) {
     width: 420px;
+    height: 698px;
     gap: 40px;
   }
 
@@ -34,8 +35,13 @@
 
   &__visual-box {
     position: relative;
-    width: 327px;
-    height: 328px;
+    width: 290px;
+    height: 290px;
+
+    @media screen and (min-width: $bp-middle) {
+      width: 327px;
+      height: 328px;
+    }
 
     &:last-child {
       position: relative;

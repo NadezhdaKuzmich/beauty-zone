@@ -51,14 +51,18 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    gap: 16px 56px;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 16px 56px;
+    }
   }
 
   &__item {
     display: flex;
     height: 181px;
     min-width: 316px;
-    max-width: calc((100% - 112px) / 3);
+    width: calc((100% - 32px) / 3);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -68,5 +72,10 @@
     fill: var(--color-primary-brand);
     padding: 24px 32px;
     gap: 12px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: calc((100% - 112px) / 3);
+      max-width: 316px;
+    }
   }
 }
