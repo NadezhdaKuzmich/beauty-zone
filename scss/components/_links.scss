@@ -2,8 +2,16 @@
   color: var(--color-primary-dark);
   text-decoration: none;
   transition: color 0.3s;
-}
 
-.link:hover {
-  color: var(--color-primary-brand);
+  &:hover {
+    color: var(--color-primary-brand);
+  }
+
+  &--light {
+    color: var(--color-primary-light);
+
+    &:hover {
+      color: var(--color-primary-brand);
+    }
+  }
 }

@@ -1,0 +1,159 @@
+.footer {
+  position: relative;
+  font-size: 14px;
+  background-color: var(--color-primary-dark);
+  background: var(--color-primary-dark)
+    url("../images/footer-background-dark.png");
+  background-position: 66% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 32px 0 66px;
+  overflow: hidden;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+    padding: 56px 0;
+  }
+
+  @media screen and (min-width: $bp-middle) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 247px;
+      height: 152px;
+      right: 0;
+      bottom: 0;
+      background-image: url("../images/footer-cosmetics-background.png");
+      background-size: 247px 152px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 182px;
+    }
+  }
+
+  &__logo {
+    .logo-brand {
+      fill: var(--color-primary-brand);
+    }
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 42px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      text-align: left;
+      gap: 20px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 182px;
+    }
+  }
+
+  &__nav {
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 45%;
+    }
+  }
+
+  &__address {
+    gap: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 55%;
+      gap: 20px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 182px;
+    }
+  }
+
+  &__logo,
+  &__menu {
+    gap: 20px;
+  }
+
+  &__menu,
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__menu,
+  &__address-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  &__address-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+    text-decoration: none;
+  }
+
+  &__address-link:hover {
+    color: var(--color-primary-brand);
+  }
+
+  &__address-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  &__address-icon {
+    fill: var(--color-primary-light);
+  }
+
+  &__address-icon:hover {
+    fill: var(--color-primary-brand);
+  }
+
+  &__address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 16px;
+    }
+  }
+
+  &__address-copyrating {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-light-accent);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 14px;
+    }
+  }
+}
