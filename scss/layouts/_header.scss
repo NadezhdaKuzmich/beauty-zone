@@ -1,10 +1,14 @@
+.fixed > .header{
+  position: absolute;
+}
+
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 16px 0;
-  z-index: 999;
+  z-index: 2;
 
   @media screen and (min-width: $bp-middle) {
     position: fixed;

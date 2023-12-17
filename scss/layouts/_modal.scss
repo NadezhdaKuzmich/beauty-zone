@@ -1,0 +1,133 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10vw 4px;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 99;
+
+  @media screen and (min-width: $bp-tablet) {
+    align-items: center;
+    padding: 20px;
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  max-width: 724px;
+  color: var(--color-primary-light);
+  background: var(--color-primary-dark) url("../images/modal-background.png");
+  border-radius: 48px;
+  padding: 14vw 10vw;
+  overflow-y: auto;
+
+  @media screen and (min-width: $bp-middle) {
+    padding: 42px 208px;
+  }
+
+  &__info {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 52px;
+    }
+
+    @media screen and (min-width: $bp-middle) {
+      font-size: 64px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-brand-dark);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 30px;
+    right: 22px;
+    fill: var(--color-primary-light);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--color-primary-brand);
+    }
+
+    @media screen and (min-width: $bp-middle) {
+      top: 42px;
+      right: 42px;
+    }
+  }
+
+  &__close-icon {
+    width: 18px;
+    height: 18px;
+
+    @media screen and (min-width: $bp-middle) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin: 0 auto 8px;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 1vh;
+    right: 0;
+    width: 140px;
+    height: 180px;
+
+    @media screen and (min-width: $bp-middle) {
+      width: 180px;
+      height: 240px;
+    }
+  }
+}
