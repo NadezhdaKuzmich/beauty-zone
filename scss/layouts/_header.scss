@@ -1,4 +1,4 @@
-.fixed > .header{
+.fixed > .header {
   position: absolute;
 }
 
@@ -32,13 +32,16 @@
   }
 
   &__logo {
-    max-width: 72px;
-    max-height: 38px;
     fill: var(--color-primary-brand);
+  }
 
-    @media screen and (min-width: $bp-middle) {
-      max-width: 114px;
-      max-height: 56px;
+  &__logo-icon {
+    max-width: 58px;
+    max-height: 30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 74px;
+      max-height: 42px;
     }
   }
 
@@ -90,5 +93,9 @@
     @media screen and (min-width: $bp-middle) {
       display: none;
     }
+  }
+
+  &__btn-close {
+    display: none;
   }
 }
