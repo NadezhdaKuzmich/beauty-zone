@@ -1,44 +1,75 @@
 .hero-section {
   position: relative;
-  background-image: linear-gradient(
-      89deg,
-      #fff 30.62%,
-      rgba(255, 255, 255, 0.85) 41.31%,
-      rgba(255, 255, 255, 0.19) 58.65%,
-      rgba(255, 255, 255, 0) 72.78%
-    ),
-    url("../images/hero-section-background.jpg");
-  background-position: right top;
-  background-repeat: repeat-x;
+  background-image: url("../images/hero-section-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   overflow: hidden;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-image: url("../images/hero-section-background@2x.jpg");
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    background-position: center top;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    background-position: 130px top;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: $bp-large) {
+    background-position: 51% top;
+  }
+
+  &_wrap {
     background-image: linear-gradient(
+      57deg,
+      #fff 20.92%,
+      rgba(255, 255, 255, 0.78) 44.46%,
+      rgba(255, 255, 255, 0.2) 58.9%,
+      rgba(255, 255, 255, 0) 72.45%
+    );
+    padding: 70px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      background-image: linear-gradient(
         89deg,
         #fff 30.62%,
         rgba(255, 255, 255, 0.85) 41.31%,
         rgba(255, 255, 255, 0.19) 58.65%,
         rgba(255, 255, 255, 0) 72.78%
-      ),
-      url("../images/hero-section-background@2x.jpg");
-  }
+      );
+      padding: 126px 0;
+    }
 
-  @media screen and (min-width: $bp-large) {
-    background-position: center 20%;
+    @media screen and (min-width: $bp-middle) {
+      background-image: linear-gradient(
+        89deg,
+        #fff 12.62%,
+        rgba(255, 255, 255, 0.85) 32.31%,
+        rgba(255, 255, 255, 0.19) 58.65%,
+        rgba(255, 255, 255, 0) 72.78%
+      );
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 178px 0;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      padding: 120px 0;
+    }
   }
 
   &__container {
     max-width: 528px;
     text-align: center;
-    padding: 70px 0;
     margin: auto;
-
-    @media screen and (min-width: $bp-tablet) {
-      padding: 124px 0 126px;
-    }
 
     @media screen and (min-width: $bp-middle) {
       text-align: left;
@@ -47,18 +78,25 @@
 
     @media screen and (min-width: $bp-desktop) {
       margin-left: 106px;
-      padding: 180px 0;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      margin-left: 0;
     }
   }
 
   &__title {
     display: flex;
     flex-direction: column;
-    font-size: 67px;
+    font-size: 54px;
     font-weight: 900;
     line-height: 1;
     color: var(--color-primary-dark);
     margin: 0 0 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 67px;
+    }
 
     @media screen and (min-width: $bp-middle) {
       font-size: 110px;
@@ -73,7 +111,7 @@
   }
 
   &__button {
-    margin: 0 auto 14px;
+    margin: 0 auto 8px;
 
     @media screen and (min-width: $bp-middle) {
       margin: 0 0 14px;

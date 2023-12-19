@@ -3,8 +3,12 @@
 }
 
 .text-small {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+  }
 }
 
 .text-bold {
