@@ -18,12 +18,12 @@
   }
 
   @media screen and (min-width: $bp-desktop) {
-    background-position: 130px top;
-    background-size: contain;
+    background-position: 90px top;
   }
 
   @media screen and (min-width: $bp-large) {
-    background-position: 51% top;
+    background-position: center top;
+    background-size: contain;
   }
 
   &_wrap {
@@ -58,11 +58,11 @@
     }
 
     @media screen and (min-width: $bp-desktop) {
-      padding: 178px 0;
+      padding: 13vw 0;
     }
 
     @media screen and (min-width: $bp-large) {
-      padding: 120px 0;
+      padding: 6vh 0;
     }
   }
 
