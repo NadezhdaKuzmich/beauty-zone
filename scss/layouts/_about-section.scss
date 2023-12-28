@@ -10,6 +10,23 @@
     padding: 28px 0 86px;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/large-star.svg");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    animation: circle infinite linear 8s;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
   &__wave {
     position: absolute;
     top: -24px;

@@ -5,6 +5,7 @@
   @media screen and (min-width: $bp-tablet) {
     display: flex;
     width: 80%;
+    max-width: 580px;
     height: 610px;
     flex-direction: column;
     flex-shrink: 0;
@@ -14,6 +15,7 @@
 
   @media screen and (min-width: $bp-middle) {
     width: 420px;
+    max-width: auto;
     height: 698px;
     gap: 40px;
   }
@@ -31,6 +33,7 @@
     height: 40px;
     background-image: url("../images/middle-star.svg");
     background-repeat: no-repeat;
+    animation: circle infinite linear 8s;
   }
 
   &__visual-box {
@@ -56,6 +59,7 @@
         height: 64px;
         background-image: url("../images/large-star.svg");
         background-repeat: no-repeat;
+        animation: circle infinite linear 8s;
       }
 
       &::after {
@@ -67,6 +71,7 @@
         height: 16px;
         background-image: url("../images/tiny-star.svg");
         background-repeat: no-repeat;
+        animation: circle infinite linear 8s;
       }
     }
   }
